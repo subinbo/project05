@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>영통구청</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script src="./js/weather.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/welfare.js"></script>
+</head>
+<body>
+    <header id="header">
+        <nav>
+            <div class="gnb">
+                <ul>
+                    <li><a href="#">영통구소개</a></li>
+                    <li><a href="#">직원업무 찾기</a></li>
+                    <li><a href="#">찾아오시는 길</a></li>
+                    <li><a href="#">포토뱅크</a></li>
+                    <li><a href="#">사이트맵</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="menu">
+            <ul class="sub">
+                <li>
+                    <h1><a href="./index.html"><img src="./image/logo.jpg" alt="logo"></a>
+                        <span></span>
+                        <img src="./image/title.png" alt="title">
+                    </h1>
+                </li>
+                <li class="th1">
+                    <a href="#">구정정보</a>
+                    <ul class="th2">
+                        <li><a href="#">새소식</a></li>
+                        <li><a href="../project06/sub1.html">영통 홍보관</a></li>
+                        <li><a href="#">갤러리 영통</a></li>
+                        <li><a href="#">수원시 소식</a></li>
+                        <li><a href="#">업무추진비공개</a></li>
+                        <li><a href="#">행사 초빙강사(연)료 지급현황 공개</a></li>
+                        <li><a href="#">주민참여예산정보</a></li>
+                        <li><a href="#">주간행사계획</a></li>
+                    </ul>
+                </li>
+                <li class="th1">
+                    <a href="#">민원안내</a>
+                    <ul class="th2">
+                        <li><a href="#">민원신청</a></li>
+                        <li><a href="../project06/sub2.html">민원발급</a></li>
+                        <li><a href="#">민원안내</a></li>
+                        <li><a href="#">민원센터안내</a></li>
+                        <li><a href="#">민원서식자료실</a></li>
+                        <li><a href="#">민원사무편람</a></li>
+                        <li><a href="#">고객만족행정</a></li>
+                        <li><a href="#">행정정보공개</a></li>
+                    </ul>
+                </li>
+                <li class="th1">
+                    <a href="#">열린광장</a>
+                    <ul class="th2">
+                        <li><a href="../project06/sub3.html">우리동네 이야기</a></li>
+                        <li><a href="#">정보교류</a></li>
+                        <li><a href="#">칭찬합니다</a></li>
+                        <li><a href="#">신고센터</a></li>
+                        <li><a href="#">청사시설 대관신청</a></li>
+                        <li><a href="#">주민참여 예산방</a></li>
+                        <li><a href="#">공고/고시</a></li>
+                        <li><a href="#">입찰정보</a></li>
+                    </ul>
+                </li>
+                <li class="th1">
+                    <a href="#">생활정보</a>
+                    <ul class="th2">
+                        <li><a href="../project06/sub4.html">맛집</a></li>
+                        <li><a href="#">문화</a></li>
+                        <li><a href="#">생활</a></li>
+                        <li><a href="#">경제</a></li>
+                        <li><a href="#">복지</a></li>
+                        <li><a href="#">교육</a></li>
+                        <li><a href="#">안전</a></li>
+                        <li><a href="#">건축</a></li>
+                        <li><a href="#">부동산</a></li>
+                        <li><a href="#">일자리정보</a></li>
+                        <li><a href="#">지적</a></li>
+                    </ul>
+                </li>
+                <li class="th1">
+                    <a href="#">영통구소개</a>
+                    <ul class="th2">
+                        <li><a href="#">구청장인사말</a></li>
+                        <li><a href="#">연혁</a></li>
+                        <li><a href="#">구정시책안내</a></li>
+                        <li><a href="#">일반현황</a></li>
+                        <li><a href="#">조직 및 업무</a></li>
+                        <li><a href="#">주민자치센터</a></li>
+                        <li><a href="#">구청사 안내</a></li>
+                        <li><a href="#">영통구 관내도</a></li>
+                        <li><a href="../project06/sub5.html">찾아오시는 길</a></li>
+                    </ul>
+                </li>
+                <li class="th1">
+                    <a href="#">영통구자랑</a>
+                    <ul class="th2">
+                        <li><a href="../project06/sub6.html">청명단오제</a></li>
+                        <li><a href="#">광교호수공원</a></li>
+                        <li><a href="#">수원팔색길</a></li>
+                        <li><a href="#">산드래미마을</a></li>
+                        <li><a href="#">여성합창단</a></li>
+                        <li><a href="#">여성축구단</a></li>
+                        <li><a href="#">삼성이노베이션뮤지엄</a></li>
+                        <li><a href="#">영통구 관내도</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section id="banner">
+        <div class="search">
+            <input type="text" placeholder="">
+            <button></button>
+        </div>
+        <div class="weather">
+            <div class="mainContentBottom cf">
+				<div class="mainContent1">
+					<h2>오늘의 날씨는?</h2>
+					<div class="ctemp">온도: </div>
+					<div class="cicon"></div>
+				</div>
+			</div>
+        </div>
+        <div class="peple">
+            <img src="./image/peple.png" alt="peple">
+        </div>
+        <div class="smart">
+            <h2>젊음과 문화,</h2>
+            <h3>smart 영통!</h3>
+            <p>영통구청장 <br> <span>김선재</span>입니다.</p>
+        </div>
+        <div class="slide">>
+            <ul>
+                <li class="banner1"></li>
+                <li class="banner2"></li>
+                <li class="banner3"></li>
+                <li class="banner4"></li>
+                <li class="banner5"></li>
+            </ul>
+        </div>
+    </section>
+    <section id="icon">
+        <h3>바로가기 <br> 서비스</h3>
+        <div>
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="./image/m_banner01.png" alt="m_banner01"
+                        onmouseover="this.src='./image/m_banner01_on.png'"
+                        onmouseout="this.src='./image/m_banner01.png'">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./image/m_banner02.jpg" alt="m_banner02"
+                        onmouseover="this.src='./image/m_banner02_on.png'"
+                        onmouseout="this.src='./image/m_banner02.jpg'">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./image/m_banner03.png" alt="m_banner03"
+                        onmouseover="this.src='./image/m_banner03_on.png'"
+                        onmouseout="this.src='./image/m_banner03.png'">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./image/m_banner04.jpg" alt="m_banner04"
+                        onmouseover="this.src='./image/m_banner04_on.jpg'"
+                        onmouseout="this.src='./image/m_banner04.jpg'">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./image/m_banner05.jpg" alt="m_banner05"
+                        onmouseover="this.src='./image/m_banner05_on.png'"
+                        onmouseout="this.src='./image/m_banner05.jpg'">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./image/m_banner06.png" alt="m_banner06"
+                        onmouseover="this.src='./image/m_banner06_on.png'"
+                        onmouseout="this.src='./image/m_banner06.png'">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./image/m_banner07.png" alt="m_banner07"
+                        onmouseover="this.src='./image/m_banner07_on.png'"
+                        onmouseout="this.src='./image/m_banner07.png'">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./image/m_banner08.png" alt="m_banner08"
+                        onmouseover="this.src='./image/m_banner08_on.png'"
+                        onmouseout="this.src='./image/m_banner08.png'">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./image/m_banner09.png" alt="m_banner09"
+                        onmouseover="this.src='./image/m_banner09_on.png'"
+                        onmouseout="this.src='./image/m_banner09.png'">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./image/m_banner10.png" alt="m_banner10"
+                        onmouseover="this.src='./image/m_banner10_on.png'"
+                        onmouseout="this.src='./image/m_banner10.png'">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <span>찾아오시는 길</span>
+            <span>시민정보화교육</span>
+            <span>민원서식<br>자료실</span>
+            <span>기초생활<br>보장안내</span>
+            <span>쓰레기<br>배출방법</span>
+            <span>기업<br>정보</span>
+            <span>응급의료<br>정보센터</span>
+            <span>수원<br>맛집</span>
+            <span>정보통신<br>검사</span>
+            <span>대피<br>시설</span>
+        </div>
+    </section>
+    <section id="notice">
+        <h4>수원의 새로운 이야기. <span>수원소식</span></h4>
+        <article class="content1">
+            <ul class="tab cf">
+                <li class="active tab1"><a href="#none">영통구 소식</a></li>
+                <li class="tab2"><a href="#none">행정복지센터 소식</a></li>
+            </ul>
+            <div class="tab_con cf">
+                <div class="board">
+                    <ul>
+                        <li>
+                            <a href="#">제10기 수원시 시민감사관 모집 공고</a>
+                            <span>22.12.13</span>
+                        </li>
+                        <li>
+                            <a href="#">2022년 제16회 수원시 지방임기제공무원 채용시험 시행계획 안내</a>
+                            <span>22.12.08</span>
+                        </li>
+                        <li>
+                            <a href="#">2022년 제12,14회 수원시 지방임기제공무원 채용시험 시행계획 재공고</a>
+                            <span>22.12.07</span>
+                        </li>
+                        <li>
+                            <a href="#">보상계획공고[수원도시계획시설(제11호 자동차정류장 : 공영차고지)]</a>
+                            <span>22.12.05</span>
+                        </li>
+                        <li>
+                            <a href="#">2023년「노인일자리 및 사회활동지원사업」참여자 모집 홍보</a>
+                            <span>22.12.05</span>
+                        </li>
+                        <li>
+                            <a href="#">2022년 12월「안전점검의 날」 </a>
+                            <span>22.11.30</span>
+                        </li>
+                        <li>
+                            <a href="#">2022년 수원시 개방형직위(도시총괄기획단장) 임용시험 공고</a>
+                            <span>22.11.28</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="board">
+                    <ul>
+                        <li>
+                            <a href="#">2023년 제1기「수원 청년 희망드림」참여자 모집 안내</a>
+                            <span>22.12.20</span>
+                        </li>
+                        <li>
+                            <a href="#">코로나 22.2.13. 이전 격리자의 생활지원비 신청기간이 곧 종료됩니다.</a>
+                            <span>22.12.19</span>
+                        </li>
+                        <li>
+                            <a href="#">코로나19 입원·격리자 생활지원비 접수 안내</a>
+                            <span>22.12.19</span>
+                        </li>
+                        <li>
+                            <a href="#">2022년 수원평생학습포럼&장애인 평생학습도시 성과공유회 개최 안내</a>
+                            <span>22.12.17</span>
+                        </li>
+                        <li>
+                            <a href="#">2022년 주민등록 사실조사 최고장 반송에 따른 최고 공고</a>
+                            <span>22.12.17</span>
+                        </li>
+                        <li>
+                            <a href="#">복지부정수급 신고, 위기가구 도움요청 리플릿</a>
+                            <span>22.12.13</span>
+                        </li>                        <li>
+                            <a href="#">2022년 겨울방학 아동급식 신청안내</a>
+                            <span>22.12.13</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+        <article class="content2">
+            <ul class="tab3">
+                <li><a href="#none">주민복지</a></li>
+            </ul>
+            <div class="welfare_banner">
+                <ul>
+                    <li class="wel1"></li>
+                    <li class="wel2"></li>
+                    <li class="wel3"></li>
+                    <li class="wel4"></li>
+                    <li class="wel5"></li>
+                    <li class="wel6"></li>
+                    <li class="wel7"></li>
+                </ul>
+            </div>
+            <div class="section_arrow">
+                <div class="arrow1">
+                    <div class="arrow1_1">
+                        <div class="arrow1_1_center">
+                            <img src="image/allow_prev.png" alt="allow_prev" class="prev fl"/>
+                            <img src="image/allow_next.png" alt="allow_prev" class="next fr"/>
+                        </div>
+                    </div>				
+                </div>
+            </div>
+            <div class="section_number">
+                <p class="bl">1/7</p>
+                <p>2/7</p>
+                <p>3/7</p>
+                <p>4/7</p>
+                <p>5/7</p>
+                <p>6/7</p>
+                <p>7/7</p>
+            </div>
+        </article>
+    </section>
+    <section id="publicity">
+        <h4>자랑스러운 영통. <span>영통 홍보관</span></h4>
+        <div class="publicity_box">
+            <div>
+                <img src="./image/publicity1.jpg" alt="publicity1">
+                <h6>매탄4동, 주민자치회 <br> 두근두근 첫 만남</h5>
+                <p>매탄4동</p>
+                <span>2022-12-12</span>
+            </div>
+            <div>
+                <img src="./image/publicity2.jpg" alt="publicity2">
+                <h6>수원지방법원,<br>직접 담근 김치 등 <br> 후원물품 전달</h5>
+                <p>사회복지과</p>
+                <span>2022-12-10</span>
+            </div>
+            <div>
+                <img src="./image/publicity3.jpg" alt="publicity3">
+                <h6>‘개성넘치는 작품 가득’<br>갤러리영통 매탄고<br>사제동행展 개최</h5>
+                <p>행정지원과</p>
+                <span>2022-12-07</span>
+            </div>
+            <div>
+                <img src="./image/publicity4.jpg" alt="publicity4">
+                <h6>광교2동, 장수사진<br>‘행복사진관’운영</h5>
+                <p>광교2동</p>
+                <span>2022-12-05</span>
+            </div>
+            <div>
+                <img src="./image/publicity5.jpg" alt="publicity5">
+                <h6>영통2동 ‘겨울철 안전사고 대비’ 제설함 정비</h5>
+                <p>영통2동</p>
+                <span>2022-12-01</span>
+            </div>
+        </div>
+    </section>
+    <section id="photo">
+        <h4>사진으로 보는 영통의 다양한 행사. <span>영통 포토뱅크</span></h4>
+        <div class="photo_box">
+            <div>
+                <img src="./image/photobank1.jpg" alt="photobank1">
+                <h6>2022.12.16. 주민총회 <br>(광교 1동)</h5>
+                <p>2022-12-16</p>
+            </div>
+            <div>
+                <img src="./image/photobank2.jpg" alt="photobank2">
+                <h6>2022.12.16. 주민자치회 발대식
+                    </h5>
+                <p>2022-12-16</p>
+            </div>
+            <div>
+                <img src="./image/photobank3.jpg" alt="photobank3">
+                <h6>2022.12.14. 여성지원<br>민방위대 월례회의</h5>
+                <p>2022-12-14</p>
+            </div>
+            <div>
+                <img src="./image/photobank4.jpg" alt="photobank4">
+                <h6>2022.12.12. 영통구<br>12월 반가운 만남</h5>
+                <p>2022-12-14</p>
+            </div>
+            <div>
+                <img src="./image/photobank5.jpg" alt="photobank5">
+                <h6>2022.12.01. 사령교부<br>(5급)</h5>
+                <p>2022-12-01</p>
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
+        <div class="top_box cf">
+            <div class="family-site cf">
+                <span>개인정보처리방침</span>
+                <span>|</span>
+                <span>웹 마스터</span>
+                <span>|</span>
+                <span>찾아오시는 길</span>
+                <span>|</span>
+                <span>홈페이지오류신고</span>
+                <select title="영통구 행정복지센터 목록 바로가기">
+                    <option>영통구 행정복지센터</option>
+                    <option>매탄1동</option>
+                    <option>매탄2동</option>
+                    <option>매탄3동</option>
+                    <option>매탄4동</option>
+                    <option>원천동</option>
+                    <option>광교1동</option>
+                    <option>광교2동</option>
+                    <option>영통1동</option>
+                    <option>영통2동</option>
+                    <option>영통3동</option>
+                    <option>태장동</option>
+                </select>
+                <select title="시·구청 홈페이지 목록 바로가기">
+                    <option>시·구청 홈페이지</option>
+                    <option>수원시청</option>
+                    <option>영통구청</option>
+                    <option>장안구청</option>
+                    <option>권선구청</option>
+                    <option>팔달구청</option>
+                </select>
+            </div>
+        </div>
+        <div class="bottom_box">
+            <div><h1><img src="./image/logo.jpg" alt="logo"></h1></div>
+            <div>
+                <address>[16545] 경기도 수원시 영통구 효원로 407(매탄동) 전화 :1899-3300(031-228-2114)</address>
+                <p>본 홈페이지에 게시된 이메일주소가 자동수집되는 것을 거부하며, 위반 시 정보통신방법에 의해 처벌됩니다.</p>
+                <p>copyright(c) Suwon Yeongtong-gu. All Rights Reserved.</p>
+            </di>
+        </div>
+    </footer>
+</body>
+</html>
